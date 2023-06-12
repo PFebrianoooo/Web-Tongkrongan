@@ -9,7 +9,8 @@
 
 body {
   font-family: "poppins", sans-serif;
-  /* min-height: 2000px; */
+  min-height: 4000px;
+  scroll-behavior: smooth;
 }
 /* navbar starts */
 .navbar {
@@ -19,6 +20,7 @@ body {
   padding: 1.4rem 7%;
   background-color: transparent;
   position: absolute;
+  box-sizing: border-box;
   top: 0;
   left: 0;
   right: 0;
@@ -59,15 +61,33 @@ body {
   display: none;
 }
 
-header {
+/* hero section starts */
+.hero {
+  min-height: 65vh;
+  display: flex;
+  align-items: center;
   background-image: url("../images/landscape.jpg");
-  width: 100%;
-  height: 70vh;
+  background-repeat: no repeat;
   background-size: cover;
-  margin-top: -5rem;
-  background-repeat: no-repeat;
+  background-position: center;
 }
 
+.hero .content {
+  padding: 1.4rem 7%;
+}
+.hero .content h1 {
+  color: white;
+  text-align: left;
+  font-size: 3.5em;
+  font-weight: 700;
+}
+
+.hero .content h1 span {
+  color: #ffd700;
+  mix-blend-mode: difference;
+}
+
+/* hero section end */
 /* media queries */
 /* laptop */
 
@@ -87,23 +107,22 @@ header {
     display: inline-block;
   }
 
-  #hamburger-menu {
-    display: inline-block;
-  }
-
   .navbar .navbar-nav {
     position: absolute;
-    top: 100%;
-    right: -100%;
+    top: 0;
+    left: -100%;
+    bottom: 0;
     background-color: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(7px);
-    width: 100vw;
-    height: 17vh;
+    width: 100%;
+    height: 16.2vh;
   }
 
   .navbar .navbar-nav.active {
-    right: 0;
-    transition: 0.3s;
+    left: 0;
+    transition: 0.4s;
+    display: block;
+    margin-top: 7em;
   }
 
   .navbar .navbar-nav a {
@@ -112,6 +131,14 @@ header {
     align-items: center;
     font-size: 1.2rem;
     margin: 1.2rem 0;
+  }
+
+  .hero-2 {
+    flex-wrap: wrap;
+  }
+
+  .hero-2 .row .row-image {
+    margin-bottom: 1.5rem;
   }
 }
 

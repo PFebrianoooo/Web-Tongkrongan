@@ -9,7 +9,8 @@
 
 body {
   font-family: "poppins", sans-serif;
-  /* min-height: 2000px; */
+  min-height: 3000px;
+  scroll-behavior: smooth;
 }
 /* navbar starts */
 .navbar {
@@ -19,6 +20,7 @@ body {
   padding: 1.4rem 7%;
   background-color: transparent;
   position: absolute;
+  box-sizing: border-box;
   top: 0;
   left: 0;
   right: 0;
@@ -58,14 +60,136 @@ body {
 #hamburger-menu {
   display: none;
 }
-header {
+
+/* section starts */
+/* section pertama starts */
+.hero {
+  min-height: 65vh;
+  display: flex;
+  align-items: center;
   background-image: url("../images/landscape.jpg");
-  width: 100%;
-  height: 70vh;
+  background-repeat: no repeat;
   background-size: cover;
-  margin-top: -5rem;
-  background-repeat: no-repeat;
+  background-position: center;
 }
+/* section pertama end */
+
+/* section card  starts */
+
+.hero .content {
+  padding: 1.4rem 7%;
+  color: #fff;
+}
+
+.hero .content .kontak {
+  color: white;
+  text-align: left;
+  font-size: 2.5em;
+}
+.hero .content p {
+  margin-bottom: 1.2rem;
+  margin-top: 1.2rem;
+}
+
+.kontak-kami .judul-total {
+  margin: 2.5rem;
+  text-align: center;
+}
+
+.kontak-kami .judul-total .garis-judul {
+  color: #ffd700;
+  font-size: 3rem;
+}
+
+.kontak-kami .judul-total .judul {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.kontak-kami .card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  gap: 1rem;
+  padding: 0 1.5rem;
+}
+
+.kontak-kami .card .box {
+  padding: 1.4rem;
+  background: rgb(245, 222, 179);
+  border-radius: 0.5rem;
+  border: 0.5rem solid rgba(255, 255, 255, 0.2);
+}
+
+.kontak-kami .card .box:hover {
+  box-shadow: rgba(22, 57, 85, 0.2) 0px 35px 25px -25px;
+  transform: translateY(-5%);
+  border: 0.5rem solid rgb(255, 215, 0);
+  transition: 0.4s;
+}
+.kontak-kami .card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  gap: 1rem;
+  padding: 0 1.5rem;
+}
+
+.kontak-kami .card .box {
+  padding: 1.4rem;
+  background: rgb(245, 222, 179);
+  border-radius: 0.5rem;
+  border: 0.5rem solid rgba(255, 255, 255, 0.2);
+}
+
+.kontak-kami .card .box:hover {
+  box-shadow: rgba(22, 57, 85, 0.2) 0px 35px 25px -25px;
+  transform: translateY(-5%);
+  border: 0.5rem solid rgb(255, 215, 0);
+  transition: 0.4s;
+}
+
+.kontak-kami .card .box .link {
+  color: grey;
+}
+/* section card end */
+
+/* lokasi starts  */
+
+.lokasi {
+  background-color: rgba(245, 222, 179, 35%);
+  background-position: cover;
+}
+
+.lokasi .judul-lokasi {
+  text-align: center;
+  margin: 11rem 2rem 0 0;
+}
+
+.lokasi .judul-lokasi .garis-lokasi {
+  color: #ffd700;
+  font-size: 3rem;
+}
+
+.lokasi .judul-lokasi .judul {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.lokasi .box-lokasi {
+  display: block;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.lokasi .box-lokasi .map {
+  display: flex;
+  flex: 1 1 45rem;
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+  margin-top: 1.5rem;
+}
+
+/* lokasi end  */
+/* section end */
 
 /* media queries */
 /* laptop */
@@ -86,23 +210,22 @@ header {
     display: inline-block;
   }
 
-  #hamburger-menu {
-    display: inline-block;
-  }
-
   .navbar .navbar-nav {
     position: absolute;
-    top: 100%;
-    right: -100%;
+    top: 0;
+    left: -100%;
+    bottom: 0;
     background-color: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(7px);
-    width: 100vw;
-    height: 17vh;
+    width: 100%;
+    height: 16.2vh;
   }
 
   .navbar .navbar-nav.active {
-    right: 0;
-    transition: 0.3s;
+    left: 0;
+    transition: 0.4s;
+    display: block;
+    margin-top: 7em;
   }
 
   .navbar .navbar-nav a {
@@ -111,6 +234,14 @@ header {
     align-items: center;
     font-size: 1.2rem;
     margin: 1.2rem 0;
+  }
+
+  .hero-2 {
+    flex-wrap: wrap;
+  }
+
+  .hero-2 .row .row-image {
+    margin-bottom: 1.5rem;
   }
 }
 
