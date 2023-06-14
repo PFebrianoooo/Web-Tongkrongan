@@ -9,7 +9,6 @@
 
 body {
   font-family: "poppins", sans-serif;
-  min-height: 3000px;
   scroll-behavior: smooth;
 }
 /* navbar starts */
@@ -215,6 +214,39 @@ body {
 /* lokasi end  */
 /* section end */
 
+/* footer starts  */
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.95);
+  text-align: center;
+  justify-content: center;
+  margin-top: 10rem;
+  line-height: 2rem;
+}
+
+.footer .quick-links a {
+  color: white;
+  margin: 0 0.7rem;
+}
+
+.footer .quick-links a:hover {
+  color: #ffd700;
+}
+
+.footer .credit p {
+  color: #fff;
+}
+
+.footer .credit a {
+  color: #ffd700;
+}
+
+.footer .credit .copy {
+  color: #ffd700;
+}
+
+/* footer ends */
+
 /* media queries */
 /* laptop */
 
@@ -266,6 +298,10 @@ body {
 
   .hero-2 .row .row-image {
     margin-bottom: 1.5rem;
+  }
+
+  .lokasi .box-lokasi p {
+    flex-wrap: wrap;
   }
 }
 
