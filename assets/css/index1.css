@@ -9,7 +9,6 @@
 
 body {
   font-family: "poppins", sans-serif;
-  min-height: 4000px;
   scroll-behavior: smooth;
 }
 /* navbar starts */
@@ -132,6 +131,41 @@ body {
   font-weight: 700;
 }
 /* hero section end */
+
+/* footer starts  */
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.95);
+  text-align: center;
+  justify-content: center;
+  margin-top: 10rem;
+  margin-bottom: 0;
+  line-height: 2rem;
+}
+
+.footer .quick-links a {
+  color: white;
+  margin: 0 0.7rem;
+}
+
+.footer .quick-links a:hover {
+  color: #ffd700;
+}
+
+.footer .credit p {
+  color: #fff;
+}
+
+.footer .credit a {
+  color: #ffd700;
+}
+
+.footer .credit .copy {
+  color: #ffd700;
+}
+
+/* footer ends */
+
 /* media queries */
 /* laptop */
 
