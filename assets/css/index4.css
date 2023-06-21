@@ -209,6 +209,7 @@ body {
 
 .lokasi .map:hover {
   border: 0.5rem solid rgb(255, 215, 0);
+  transition: 0.4s;
 }
 
 /* lokasi end  */
@@ -290,14 +291,6 @@ body {
     align-items: center;
     font-size: 1.2rem;
     margin: 1.2rem 0;
-  }
-
-  .hero-2 {
-    flex-wrap: wrap;
-  }
-
-  .hero-2 .row .row-image {
-    margin-bottom: 1.5rem;
   }
 
   .lokasi .box-lokasi p {

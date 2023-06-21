@@ -74,18 +74,73 @@ body {
 .hero .content {
   padding: 1.4rem 7%;
 }
+
 .hero .content h1 {
   color: white;
   text-align: left;
-  font-size: 3.5em;
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero .content p {
+  color: #fff;
+}
+
+/* kegiatan kami starts */
+.act {
+  padding: 1.4rem 7%;
+}
+
+.act .judul-total {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.act .judul-total .garis-judul {
+  font-size: 3rem;
+  color: #ffd700;
+}
+
+.act .judul-total .judul {
+  font-size: 2.5rem;
   font-weight: 700;
 }
 
-.hero .content h1 span {
-  color: #ffd700;
-  mix-blend-mode: difference;
+.kegiatan {
+  margin-top: 2rem;
+  display: flex;
 }
 
+.kegiatan .image {
+  flex: 1 1 45rem;
+}
+
+.kegiatan .image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
+
+.kegiatan .penjelasan {
+  flex: 1 1 45rem;
+  align-items: center;
+  text-align: center;
+  margin: 4rem 0 1rem 1rem;
+}
+
+.kegiatan .penjelasan h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.kegiatan .penjelasan p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top: 1rem;
+}
+
+/* kegiatan kami end */
 /* hero section end */
 
 /* footer starts  */
@@ -165,12 +220,12 @@ body {
     margin: 1.2rem 0;
   }
 
-  .hero-2 {
+  .kegiatan {
     flex-wrap: wrap;
   }
 
-  .hero-2 .row .row-image {
-    margin-bottom: 1.5rem;
+  .kegiatan .penjelasan {
+    margin: 2rem 2rem;
   }
 }
 
