@@ -98,13 +98,17 @@ body {
 .about .about-slider .slide {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
   gap: 1.5rem;
   padding-top: 9rem;
 }
 
 .about .about-slider .slide .content {
   flex: 1 1 45rem;
+}
+
+.about .about-slider .slide .content p {
+  line-height: 2rem;
+  margin-top: 1.3rem;
 }
 
 .about .about-slider .slide .image {
@@ -118,12 +122,12 @@ body {
 
 .about .about-slider .slide .content span {
   color: #ffd700;
-  font-size: 1.2rem;
+  font-size: 1.7rem;
   font-weight: 700;
 }
 
 .about .about-slider .slide .content h3 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 700;
 }
 
@@ -204,6 +208,10 @@ body {
     align-items: center;
     font-size: 1.2rem;
     margin: 1.2rem 0;
+  }
+
+  .about .about-slider .slide {
+    flex-wrap: wrap;
   }
 }
 
