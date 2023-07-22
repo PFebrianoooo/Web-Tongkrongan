@@ -140,6 +140,39 @@ body {
   margin-top: 1rem;
 }
 
+.kegiatan-1 {
+  margin-top: 2rem;
+  display: flex;
+}
+
+.kegiatan-1 .image {
+  flex: 1 1 45rem;
+}
+
+.kegiatan-1 .image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
+
+.kegiatan-1 .penjelasan {
+  flex: 1 1 45rem;
+  align-items: center;
+  text-align: center;
+  margin: 4rem 0 1rem 1rem;
+}
+
+.kegiatan-1 .penjelasan h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.kegiatan-1 .penjelasan p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top: 1rem;
+}
+
 /* kegiatan kami end */
 /* hero section end */
 
@@ -225,6 +258,14 @@ body {
   }
 
   .kegiatan .penjelasan {
+    margin: 2rem 2rem;
+  }
+
+  .kegiatan-1 {
+    flex-wrap: wrap-reverse;
+  }
+
+  .kegiatan-1 .penjelasan {
     margin: 2rem 2rem;
   }
 }

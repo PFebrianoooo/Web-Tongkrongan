@@ -80,14 +80,20 @@ body {
   color: #fff;
 }
 
+.hero .content .post-credit {
+  font-weight: 100;
+}
+
 .hero .content .kontak {
   color: white;
   text-align: left;
   font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
+
 .hero .content p {
-  margin-bottom: 1.2rem;
-  margin-top: 1.2rem;
+  color: #fff;
 }
 
 .kontak-kami .judul-total {

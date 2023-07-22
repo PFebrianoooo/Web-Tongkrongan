@@ -74,16 +74,22 @@ body {
 .hero .content {
   padding: 1.4rem 7%;
 }
-.hero .content h1 {
-  color: white;
-  text-align: left;
-  font-size: 3.5em;
-  font-weight: 700;
+
+.hero .content .post-credit {
+  color: #fff;
+  font-weight: 100;
 }
 
-.hero .content h1 span {
-  color: #ffd700;
-  mix-blend-mode: difference;
+.hero .content h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #fff;
+  text-align: left;
+}
+
+.hero .content p {
+  color: #fff;
 }
 
 /* section starts */
@@ -109,6 +115,7 @@ body {
 .about .about-slider .slide .content p {
   line-height: 2rem;
   margin-top: 1.3rem;
+  font-weight: 300;
 }
 
 .about .about-slider .slide .image {
