@@ -71,6 +71,11 @@ body {
   background-position: center;
 }
 
+.hero .content .post-credit {
+  color: #fff;
+  font-weight: 100;
+}
+
 .hero .content {
   padding: 1.4rem 7%;
 }
